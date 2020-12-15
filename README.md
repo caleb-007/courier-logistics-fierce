@@ -1,10 +1,10 @@
-# courier-logistics-fierce
+# LOGISTIX
 
-LOGISTIX A creative Transportation Theme we worked on at HNGI7 for Envato.
+LOGISTIX a creative Transportation Theme we worked on at HNGI7 for Envato.
 
 ![img](https://i.ibb.co/d69Gkr7/Screenshot-346.png)
 
-## Discription 
+## Discription 📍
 
 **LOGISTIX is The Best Platform For Transport And Delivery Solutions**
 
@@ -57,3 +57,4 @@ LOGISTIX is a representative logistic operator, providing full range of delivery
 **And Soo Much More!**
 
 ## Preview Live Demo 😉
+ Visit - https://calebareeveso.github.io/courier-logistics-fierce/ or [LOGISTIX](https://calebareeveso.github.io/courier-logistics-fierce/)
