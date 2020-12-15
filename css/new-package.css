@@ -1,0 +1,200 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+/* Base Style */
+html {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-family: 'Lato', sans-serif;
+  }
+  
+
+  /* Banner-Style */
+  .banner-dispatch {
+    background: url('../img/banner.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  #overlay {
+    background: rgba(99, 94, 94, 0.5);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  /* Package  Styling */
+.package-banner {
+    padding: 60px 0;
+  }
+  
+  .banner-header {
+    font-weight: 700;
+    margin: 2rem auto;
+    font-size: 36px;
+  }
+  
+  .banner-text {
+    font-size: 17px;
+    line-height: 160%;
+  }
+
+
+  .package-section {
+    margin: 80px 35px ;
+    background-image: url('../img/vector.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 95%;
+  }
+
+  .package-arc {
+    position: absolute;
+    right: 0;
+    top: 80%;
+    z-index: -999;
+  }
+
+  .package__questions {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+  }
+
+  .package__questions--label {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #626262;
+  }
+  .form-control {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+    background-color: transparent;
+    outline: 0;
+    box-shadow: none;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+  }
+
+  .form-control:focus {
+    outline: 0;
+    box-shadow: none;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+  }
+
+  .estimated{
+    font-family: "Lato", san-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+
+  }
+  
+  .desc {
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .desc__label {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .desc__text {
+      font-family:"Lato", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      padding: 25px;
+      color: rgba(98, 98, 98, 0.4);
+  }
+
+  .btn-request{
+    background: #FC4E17;
+    border-radius: 40px;
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+
+  }
+  
+
+/* Media Quaries */
+
+
+@media (max-width: 425px) {
+  .banner {
+    height: 500px;
+  }
+  .package-banner {
+    padding: 20px 0;
+  }
+
+  .banner-header {
+    font-size: 28px;
+  }
+
+  .banner-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+
+    
+  .package-section{
+    margin: 50px 20px;
+  }
+} 
+
+@media (max-width: 1200px) {
+  .desc {
+    justify-content: center;
+    align-items: center;
+  } 
+}
+
+
+

@@ -3,23 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Result Page</title>
-    <link rel="stylesheet" href="./css/header-footer.css" />
-    <link rel="stylesheet" href="./css/services-page.css" />
-    <link rel="stylesheet" href="./css/result-page.css" />
-    <link rel="stylesheet" href="./css/about.css" />
+    <title>About Us</title>
+    <!-- fontawesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/727a6d1d11.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- boostrap cdn -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"
-    />
+    <!-- external stylesheets -->
+    <link rel="stylesheet" href="./css/header-footer.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/services-page.css" />
   </head>
   <body>
     <!-- Header start -->
@@ -38,10 +38,15 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto pr-lg-3">
               <li class="nav-item pl-1">
-                <a class="nav-link nav-link1" href="#" id="nav-active">Home</a>
+                <a class="nav-link nav-link1" href="./index.html">Home</a>
               </li>
               <li class="nav-item pl-1">
-                <a class="nav-link nav-link1" href="./about.html">About Us</a>
+                <a
+                  class="nav-link nav-link1"
+                  id="nav-active"
+                  href="./about.html"
+                  >About Us</a
+                >
               </li>
               <li class="nav-item pl-1">
                 <a class="nav-link nav-link1" href="./services.html"
@@ -84,10 +89,10 @@
       <!-- Mobile Nav -->
       <div class="mobile-nav">
         <ul class="navbar-nav">
-          <li class="nav-item current">
-            <a class="nav-link" href="#">Home</a>
-          </li>
           <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item current">
             <a class="nav-link" href="./about.html">About Us</a>
           </li>
           <li class="nav-item">
@@ -130,46 +135,119 @@
     </header>
     <!-- Header end -->
 
-    <!-- main section start -->
-    <section class="container-fluid main" style="margin-top: 170px;">
-      <div class="row">
-        <div class="col-md-10 ml-auto col-lg-6">
-          <div class="result-text">
-            <div>
-              <h1 class="font-wight-bolder h1-1">
-                Your Order has been Tracked
-              </h1>
-              <div class="pb-4">
-                <img src="img/chart.png" alt="" style="width: 100%;" />
-              </div>
-              <div class="container pt-5">
-                <div style="position: relative; display: inline-block;">
-                  <h1 class="relative lato">Shipped, Awaiting Transit</h1>
-                  <img class="range" src="./img/rangex.png" alt="" />
-                </div>
-                <img src="img/range.png" alt="" style="width: 100%;" />
-                <p>
-                  <small class="lato">Scheduled Delivery</small>
-                </p>
-                <h1 class="lato">Saturday</h1>
-                <p class="lato">02/02/2020</p>
-                <p>
-                  <small>Location</small>
-                </p>
-                <p class="lato">007, Adedeji Abiola Way, HNG Road.</p>
-              </div>
-            </div>
-          </div>
+    <!-- hero section -->
+    <section class="container-fluid mb-5 about-hero" id="hero">
+      <div class="row pl-lg-4">
+        <div
+          class="col-sm-12 col-md-5 pl-3 pl-lg-5 d-flex flex-column justify-content-center hero-mobile"
+        >
+          <h3 class="txt-caption txt-primary text-left">About Us</h3>
+          <p class="txt-hero text-left">
+            Logistix is a representative logistic operator, providing full range
+            of delivery services for individual, cooperate and industrial
+            company. We are currently available in 26 African countries, giving
+            the best of the best services through our well trained staffs.
+          </p>
         </div>
         <img
-          class="col-lg-6 side-img"
-          src="./img/delivery-guy.svg"
-          alt="delivery guy image"
+          src="./img/about/image (1).png"
+          alt="BG"
+          class="img-fluid hero-img col-7 d-none d-md-block p-0"
         />
       </div>
     </section>
-    <!-- main section ends -->
-
+    <!-- service section -->
+    <section class="py-5 my-5" id="service">
+      <div class="container">
+        <div class="row d-flex flex-wrap justify-content-around">
+          <div
+            class="col-md-3 d-flex align-items-center m-3 m-md-0 justify-content-center"
+          >
+            <img
+              class="vector-icons"
+              src="./img/about/car.svg"
+              alt="delivery truck"
+            />
+            <div class="pl-3">
+              <h4 class="txt-light txt-large">Fast Delivery</h4>
+              <p class="txt-light txt">Worldwide</p>
+            </div>
+          </div>
+          <div
+            class="col-md-3 d-flex align-items-center m-3 m-md-0 justify-content-center"
+          >
+            <img
+              class="vector-icons"
+              src="./img/about/user.svg"
+              alt="Customer care"
+            />
+            <div class="pl-3">
+              <h4 class="txt-large txt-light">24/7 Online Support</h4>
+              <p class="txt txt-light">Customer Support</p>
+            </div>
+          </div>
+          <div
+            class="col-md-3 d-flex align-items-center m-3 m-md-0 justify-content-center"
+          >
+            <img
+              class="vector-icons"
+              src="./img/about/card.svg"
+              alt="debit card"
+            />
+            <div class="pl-3">
+              <h4 class="txt-large txt-light">Payment Security</h4>
+              <p class="txt txt-light">Safe Payment</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- care-taker section -->
+    <section class="container my-5 care-taker" id="meet-team">
+      <h3 class="mb-5 txt-caption txt-primary text-center">Care Takers</h3>
+      <div
+        class="container-fluid d-flex flex-wrap flex-md-nowrap flex-row justify-content-center"
+      >
+        <div class="card">
+          <img
+            src="./img/about/girl-bridge.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body text-center">
+            <h5 class="card-title txt-large txt-dark">Nike Air</h5>
+            <p class="card-text txt-dark txt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              nunc id varius nunc.
+            </p>
+          </div>
+        </div>
+        <div class="card mx-md-5 my-5 my-md-0">
+          <img src="./img/about/boy.png" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <h5 class="card-title txt-large txt-dark">Adedeji Abiola</h5>
+            <p class="card-text txt txt-dark">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              nunc id varius nunc.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./img/about/girl-office.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body text-center">
+            <h5 class="card-title txt-large txt-dark">Folashade Omidiora</h5>
+            <p class="card-text txt txt-dark">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              nunc id varius nunc.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Footer start -->
     <footer class="footer footer_padding">
       <div class="container">
@@ -239,23 +317,22 @@
     </footer>
     <!-- Footer end -->
 
-    <!-- Script start -->
+    <!-- bootstrap script tags -->
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
     <script src="./js/toggler.js"></script>
-    <!-- Script end -->
   </body>
 </html>

@@ -1,0 +1,13 @@
+header .nav-link:hover {
+  color: black !important;
+}
+
+#pink-border {
+  border: 1px solid #FE5C28 !important;
+}
+
+header .btn_contact:hover {
+  color: white !important;
+  background-color: #FE5C28 !important;
+}
+

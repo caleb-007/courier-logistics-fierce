@@ -1,0 +1,178 @@
+div.background {
+  padding-top: 100px;
+  background-image: url(../img/Frame.png);
+  height: 900px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+section .background-form {
+  background-image: url(../img/Rectangle.png);
+  width: 100% !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+section.container {
+  font-family: "Poppins", sans-serif;
+}
+section .form {
+  margin-top: 130px;
+  border-radius: 50px;
+  background: #fff0eb;
+}
+section .btns {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+}
+section .active {
+  color: #000000;
+}
+section .line1 {
+  position: relative;
+  bottom: 4.5px;
+  left: -1px;
+  top: -18px;
+  width: 75px;
+  border: 4px solid black;
+}
+section .line2 {
+  position: relative;
+  bottom: 4.5px;
+  left: -1px;
+  top: -18px;
+  width: 75px;
+  border: 4px solid black;
+}
+section .name {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 45px;
+  text-transform: capitalize;
+  color: #ff5c27;
+}
+section .input {
+  width: 100%;
+  margin-top: -20px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #ff5c27;
+  border-radius: 0px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 45px;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.3);
+}
+input:focus {
+  outline: none !important;
+}
+section .signinbtn,
+section .signupbtn {
+  background: #ff5c27;
+  border-radius: 20px;
+  color: white;
+  padding: 11px 0px;
+  margin: 17px 0px 5px 0px;
+}
+section .signinbtn:hover,
+section .signupbtn:hover {
+  transition: 0.3s;
+  background-color: #ce5932;
+}
+
+section .sign-in {
+  animation: sign-in 0.2s ease-in forwards;
+  position: relative;
+}
+section .sign-up {
+  animation: sign-up 0.2s ease-in forwards;
+  position: relative;
+}
+
+@keyframes sign-in {
+  0% {
+    top: 100px;
+    display: none;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes sign-up {
+  0% {
+    top: 100px;
+    display: none;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .form {
+    margin-top: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  div.background {
+    padding-top: 100px;
+    background-image: url(../img/Frame.png);
+    height: 950px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+  }
+  section .background-form{
+    background-position:center;
+  }
+  .form {
+    margin-top: 0px ;
+  }
+  .btns {
+    font-size: 20px !important;
+  }
+  .line1,
+  .line2 {
+    width: 55px !important;
+  }
+  .name {
+    line-height: 22px;
+  }
+  .social-icons,
+  .phone {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  div.background {
+    padding-top: 0px;
+    background-image: none;
+    height: auto;
+  }
+  .form {
+    margin-top: 0px;
+  }
+  .social-icons,
+  .phone {
+    display: flex;
+  }
+}

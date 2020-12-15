@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Result Page</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="./css/header-footer.css" />
-    <link rel="stylesheet" href="./css/services-page.css" />
-    <link rel="stylesheet" href="./css/result-page.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
     <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/services-page.css" />
+    <link rel="stylesheet" href="./css/resolve-nav.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -20,6 +21,10 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Header start -->
@@ -31,14 +36,18 @@
               <span class="toggle"></span>
             </div>
             <a href="./index.html">
-              <img src="./img/logo-pink.svg" class="img-fluid" alt="logo" />
+              <img
+                src="./img/logo-pink.svg"
+                class="img-fluid mt-2 mt-md-0"
+                alt="logo"
+              />
             </a>
           </div>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto pr-lg-3">
               <li class="nav-item pl-1">
-                <a class="nav-link nav-link1" href="#" id="nav-active">Home</a>
+                <a class="nav-link nav-link1" href="#">Home</a>
               </li>
               <li class="nav-item pl-1">
                 <a class="nav-link nav-link1" href="./about.html">About Us</a>
@@ -71,10 +80,20 @@
                 </div>
               </li>
               <li class="nav-item pl-1">
-                <a class="nav-link nav-link1" href="./contact.html">Contact</a>
+                <a
+                  class="nav-link nav-link1"
+                  id="nav-active"
+                  href="./contact.html"
+                  >Contact</a
+                >
               </li>
               <li class="nav-item pl-1">
-                <a class="btn_1 text-white" href="./sign-in.html">Sign Up</a>
+                <a
+                  class="btn_1 text-dark"
+                  style="border-color: #ff6633;"
+                  href="./sign-in.html"
+                  >Sign Up</a
+                >
               </li>
             </ul>
           </div>
@@ -84,7 +103,7 @@
       <!-- Mobile Nav -->
       <div class="mobile-nav">
         <ul class="navbar-nav">
-          <li class="nav-item current">
+          <li class="nav-item">
             <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
@@ -115,7 +134,7 @@
               >
             </div>
           </li>
-          <li class="nav-item">
+          <li class="nav-item current">
             <a class="nav-link" href="./contact.html">Contact</a>
           </li>
 
@@ -130,46 +149,81 @@
     </header>
     <!-- Header end -->
 
-    <!-- main section start -->
-    <section class="container-fluid main" style="margin-top: 170px;">
-      <div class="row">
-        <div class="col-md-10 ml-auto col-lg-6">
-          <div class="result-text">
-            <div>
-              <h1 class="font-wight-bolder h1-1">
-                Your Order has been Tracked
-              </h1>
-              <div class="pb-4">
-                <img src="img/chart.png" alt="" style="width: 100%;" />
-              </div>
-              <div class="container pt-5">
-                <div style="position: relative; display: inline-block;">
-                  <h1 class="relative lato">Shipped, Awaiting Transit</h1>
-                  <img class="range" src="./img/rangex.png" alt="" />
-                </div>
-                <img src="img/range.png" alt="" style="width: 100%;" />
-                <p>
-                  <small class="lato">Scheduled Delivery</small>
-                </p>
-                <h1 class="lato">Saturday</h1>
-                <p class="lato">02/02/2020</p>
-                <p>
-                  <small>Location</small>
-                </p>
-                <p class="lato">007, Adedeji Abiola Way, HNG Road.</p>
-              </div>
-            </div>
+    <!-- Contact Starts here -->
+    <section class="container" style="margin-top: 80px;">
+      <h1 class="color capitalize text-4xl md:pl-0 py-6">
+        contact us
+      </h1>
+      <div class="w-full flex flex-col-reverse justify-between md:flex-row">
+        <!-- Contact container starts -->
+        <div class="flex flex-wrap md:block md:mt-6">
+          <div class="w-1/2 md:w-auto mb-3">
+            <img src="./img/contact/location.png" alt="Icon" />
+            <h5 class="font-bold capitalize">our location</h5>
+            <p class="capitalize">Austen, Texas</p>
+          </div>
+          <div class="mb-3">
+            <img src="./img/contact/email 1.png" alt="" />
+            <h5 class="font-bold capitalize">our email</h5>
+            <p class="capitalize">info@logistix.org</p>
+          </div>
+          <div class="w-1/2 md:w-auto mb-3">
+            <img src="./img/contact/phone-call 1.png" alt="" />
+            <h5 class="font-bold capitalize">call us</h5>
+            <p class="capitalize">(555) 555-1234</p>
+          </div>
+          <div class="mb-3">
+            <a href="./faq.html">
+              <img src="./img/contact/conversation-questions 2.png" alt="" />
+              <h5 class="font-bold uppercase">faq</h5>
+            </a>
           </div>
         </div>
-        <img
-          class="col-lg-6 side-img"
-          src="./img/delivery-guy.svg"
-          alt="delivery guy image"
-        />
+        <!-- Contact container ends -->
+        <!-- Form container starts -->
+        <form
+          action=""
+          class="w-full text-right my-4 sm:mt-0 md:w-2/3 lg:w-3/4 px-4"
+        >
+          <div class="md:flex">
+            <input
+              type="text"
+              placeholder="Name"
+              class="input-border h-12 w-full pl-2 mb-4 md:mb-0 md:mr-3"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              class="input-border h-12 w-full pl-2 md:ml-3"
+            />
+          </div>
+          <br />
+          <input
+            type="text"
+            placeholder="Subject"
+            class="input-border h-12 w-full pl-2"
+          />
+          <br />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            class="input-border w-full mt-4 pl-2"
+            placeholder="Message"
+          >
+          </textarea>
+          <br />
+          <button
+            class="bg-color w-full md:w-auto text-white rounded py-2 px-6 mt-4"
+          >
+            Send message
+          </button>
+        </form>
+        <!-- Form container ends -->
       </div>
     </section>
-    <!-- main section ends -->
-
+    <!-- Contact ends here -->
     <!-- Footer start -->
     <footer class="footer footer_padding">
       <div class="container">

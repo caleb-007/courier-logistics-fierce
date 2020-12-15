@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Result Page</title>
+    <title>Track Package Form</title>
+    <link rel="stylesheet" href="./css/track-package-form.css" />
     <link rel="stylesheet" href="./css/header-footer.css" />
-    <link rel="stylesheet" href="./css/services-page.css" />
-    <link rel="stylesheet" href="./css/result-page.css" />
     <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/services-page.css" />
+    <link rel="stylesheet" href="./css/resolve-nav.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -22,6 +23,18 @@
     />
   </head>
   <body>
+    <picture class="top_left">
+      <source media="(min-width:993px)" srcset="img/image.png" />
+      <source media="(min-width:768px)" srcset="img/eli_mobile.png" />
+      <img src="img/eli_mobile.png" alt="Eclipse" style="width: auto;" />
+    </picture>
+    <picture class="delivery">
+      <!-- <source media="(min-width:px)" srcset="img/eli_mobile.png"> -->
+      <source media="(min-width:993px)" srcset="img/delivery.png" />
+      <source media="(min-width:768px)" srcset="img/delivery_smaller.png" />
+      <img src="img/delivery_smaller.png" alt="Delivery" style="width: auto;" />
+      <!-- <source class="d-none d-xl-block img-fluid" src=""> -->
+    </picture>
     <!-- Header start -->
     <header>
       <div class="container my-4 px-0 mt-4 mb-4">
@@ -38,7 +51,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto pr-lg-3">
               <li class="nav-item pl-1">
-                <a class="nav-link nav-link1" href="#" id="nav-active">Home</a>
+                <a class="nav-link nav-link1" href="./index.html">Home</a>
               </li>
               <li class="nav-item pl-1">
                 <a class="nav-link nav-link1" href="./about.html">About Us</a>
@@ -84,8 +97,8 @@
       <!-- Mobile Nav -->
       <div class="mobile-nav">
         <ul class="navbar-nav">
-          <li class="nav-item current">
-            <a class="nav-link" href="#">Home</a>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./about.html">About Us</a>
@@ -130,48 +143,37 @@
     </header>
     <!-- Header end -->
 
-    <!-- main section start -->
-    <section class="container-fluid main" style="margin-top: 170px;">
+    <!-- content start -->
+    <div class="container track-page">
       <div class="row">
-        <div class="col-md-10 ml-auto col-lg-6">
-          <div class="result-text">
-            <div>
-              <h1 class="font-wight-bolder h1-1">
-                Your Order has been Tracked
-              </h1>
-              <div class="pb-4">
-                <img src="img/chart.png" alt="" style="width: 100%;" />
-              </div>
-              <div class="container pt-5">
-                <div style="position: relative; display: inline-block;">
-                  <h1 class="relative lato">Shipped, Awaiting Transit</h1>
-                  <img class="range" src="./img/rangex.png" alt="" />
-                </div>
-                <img src="img/range.png" alt="" style="width: 100%;" />
-                <p>
-                  <small class="lato">Scheduled Delivery</small>
-                </p>
-                <h1 class="lato">Saturday</h1>
-                <p class="lato">02/02/2020</p>
-                <p>
-                  <small>Location</small>
-                </p>
-                <p class="lato">007, Adedeji Abiola Way, HNG Road.</p>
-              </div>
+        <section class="col-lg-6 mb-3 mt-md-5">
+          <h2 class="orange d-none d-md-block">Track your Order</h2>
+          <h2 class="orange d-md-none">Track your</h2>
+          <h2 class="orange d-md-none">Order</h2>
+          <form class="pr-4">
+            <div class="">
+              <input class="" type="text" name="" placeholder="Track Number" />
             </div>
+            <div class="mt-2">
+              <a href="./result-page.html"
+                ><input
+                  class="btn_orange track"
+                  type="button"
+                  name=""
+                  value="Track"
+              /></a>
+            </div>
+          </form>
+          <div class="mt-5">
+            <img class="img-fluid" src="img/icon.png" />
           </div>
-        </div>
-        <img
-          class="col-lg-6 side-img"
-          src="./img/delivery-guy.svg"
-          alt="delivery guy image"
-        />
+        </section>
       </div>
-    </section>
-    <!-- main section ends -->
+    </div>
+    <!-- content end -->
 
     <!-- Footer start -->
-    <footer class="footer footer_padding">
+    <footer class="footer footer_padding mt-5">
       <div class="container">
         <div class="row">
           <div class="col-md-6">

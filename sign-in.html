@@ -3,11 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Result Page</title>
-    <link rel="stylesheet" href="./css/header-footer.css" />
-    <link rel="stylesheet" href="./css/services-page.css" />
-    <link rel="stylesheet" href="./css/result-page.css" />
-    <link rel="stylesheet" href="./css/about.css" />
+    <title>Sign-in</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -20,8 +16,18 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/sign-in.css" />
+    <link rel="stylesheet" href="./css/header-footer.css" />
+    <link rel="stylesheet" href="./css/landing-page.css" />
+    <link rel="stylesheet" href="./css/services-page.css" />
+    <link rel="stylesheet" href="./css/about.css" />
   </head>
   <body>
+    <!-- body start -->
     <!-- Header start -->
     <header>
       <div class="container my-4 px-0 mt-4 mb-4">
@@ -38,7 +44,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto pr-lg-3">
               <li class="nav-item pl-1">
-                <a class="nav-link nav-link1" href="#" id="nav-active">Home</a>
+                <a class="nav-link nav-link1" href="#">Home</a>
               </li>
               <li class="nav-item pl-1">
                 <a class="nav-link nav-link1" href="./about.html">About Us</a>
@@ -84,7 +90,7 @@
       <!-- Mobile Nav -->
       <div class="mobile-nav">
         <ul class="navbar-nav">
-          <li class="nav-item current">
+          <li class="nav-item">
             <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
@@ -129,48 +135,152 @@
       </div>
     </header>
     <!-- Header end -->
-
-    <!-- main section start -->
-    <section class="container-fluid main" style="margin-top: 170px;">
-      <div class="row">
-        <div class="col-md-10 ml-auto col-lg-6">
-          <div class="result-text">
-            <div>
-              <h1 class="font-wight-bolder h1-1">
-                Your Order has been Tracked
-              </h1>
-              <div class="pb-4">
-                <img src="img/chart.png" alt="" style="width: 100%;" />
-              </div>
-              <div class="container pt-5">
-                <div style="position: relative; display: inline-block;">
-                  <h1 class="relative lato">Shipped, Awaiting Transit</h1>
-                  <img class="range" src="./img/rangex.png" alt="" />
+    <div class="background">
+      <section class="container">
+        <div class="row">
+          <div
+            class="col-6 background-form d-none d-md-block"
+            style="background-color: white;"
+          ></div>
+          <div class="col-12 col-md-6" style="background-color: white;">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-9 form">
+                <div id="btn" class="row justify-content-between pt-4">
+                  <div class="col-5 ml-4">
+                    <p id="sign-up-btn" class="btns active">SIGN UP</p>
+                    <div id="sign-up-line" class="line1"></div>
+                  </div>
+                  <div class="col-5">
+                    <p id="sign-in-btn" class="btns">SIGN IN</p>
+                    <div id="sign-in-line" class="line2 d-none"></div>
+                  </div>
                 </div>
-                <img src="img/range.png" alt="" style="width: 100%;" />
-                <p>
-                  <small class="lato">Scheduled Delivery</small>
-                </p>
-                <h1 class="lato">Saturday</h1>
-                <p class="lato">02/02/2020</p>
-                <p>
-                  <small>Location</small>
-                </p>
-                <p class="lato">007, Adedeji Abiola Way, HNG Road.</p>
+                <div
+                  class="row"
+                  style="
+                    border-radius: 50px;
+                    background: white;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                  "
+                >
+                  <div class="col-12 pt-4 px-5">
+                    <form id="sign-up" class="sign-up">
+                      <div class="form-group">
+                        <label for="name" class="name">Full Name</label>
+                        <div>
+                          <input
+                            type="text"
+                            id="name"
+                            class="input p-0"
+                            placeholder="Mark"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="email" class="name">Email</label>
+                        <div>
+                          <input
+                            type="email"
+                            id="email"
+                            class="input p-0"
+                            placeholder="Mark@gmail.com"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="password" class="name">Password</label>
+                        <div>
+                          <input
+                            type="password"
+                            id="password"
+                            class="input p-0"
+                            placeholder="************"
+                          />
+                        </div>
+                      </div>
+                      <div class="signupbtn">
+                        <button class="btn form-control text-white">
+                          SIGN UP
+                        </button>
+                      </div>
+                      <div class="text-center">
+                        <button
+                          class="btn name text-center"
+                          style="font-size: 16px;"
+                        >
+                          i already have an account?
+                        </button>
+                      </div>
+                    </form>
+                    <form
+                      id="sign-in"
+                      class="sign-in d-none"
+                      style="padding: 42px 0;"
+                    >
+                      <div class="form-group">
+                        <label for="email" class="name">Email</label>
+                        <div>
+                          <input
+                            type="email"
+                            id="email"
+                            class="input p-0"
+                            placeholder="Mark@gmail.com"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="password" class="name">Password</label>
+                        <div>
+                          <input
+                            type="password"
+                            id="password"
+                            class="input p-0"
+                            placeholder="************"
+                          />
+                        </div>
+                      </div>
+                      <div class="signinbtn my-4">
+                        <button class="btn form-control text-white">
+                          SIGN IN
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
               </div>
+            </div>
+            <div
+              class="row justify-content-center text-center mt-3 social-icons"
+            >
+              <div class="col-2">
+                <button class="btn">
+                  <img src="/img/linkdin.png" width="25px" alt="" />
+                </button>
+              </div>
+              <div class="col-2">
+                <button class="btn">
+                  <img src="/img/insta.png" width="25px" alt="" />
+                </button>
+              </div>
+              <div class="col-2">
+                <button class="btn">
+                  <img src="/img/twitter.png" width="25px" alt="" />
+                </button>
+              </div>
+              <div class="col-2">
+                <button class="btn">
+                  <img src="/img/facebook.png" width="25px" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="row justify-content-center mt-2 phone">
+              <div class="col-6 text-center"></div>
             </div>
           </div>
         </div>
-        <img
-          class="col-lg-6 side-img"
-          src="./img/delivery-guy.svg"
-          alt="delivery guy image"
-        />
-      </div>
-    </section>
-    <!-- main section ends -->
+      </section>
+    </div>
 
-    <!-- Footer start -->
     <footer class="footer footer_padding">
       <div class="container">
         <div class="row">
@@ -237,7 +347,8 @@
         </div>
       </div>
     </footer>
-    <!-- Footer end -->
+
+    <!-- body end -->
 
     <!-- Script start -->
     <script
@@ -255,6 +366,39 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <!-- scripts for buttons -->
+    <script>
+      const signUp = document.querySelector('#sign-up')
+      const signIn = document.querySelector('#sign-in')
+      const signInBtn = document.querySelector('#sign-in-btn')
+      const signUpBtn = document.querySelector('#sign-up-btn')
+      const line1 = document.querySelector('#sign-up-line')
+      const line2 = document.querySelector('#sign-in-line')
+
+      const button = document.querySelector('#btn')
+
+      button.addEventListener('click', function (e) {
+        if (e.target.id == 'sign-up-btn') {
+          signIn.classList.add('d-none')
+          signUpBtn.classList.add('active')
+          line2.classList.add('d-none')
+
+          signUp.classList.remove('d-none')
+          signInBtn.classList.remove('active')
+          line1.classList.remove('d-none')
+        } else if (e.target.id == 'sign-in-btn') {
+          signIn.classList.remove('d-none')
+          signUpBtn.classList.remove('active')
+          line2.classList.remove('d-none')
+
+          signUp.classList.add('d-none')
+          signInBtn.classList.add('active')
+          line1.classList.add('d-none')
+        }
+      })
+    </script>
+    <!-- scripts for buttons end -->
+
     <script src="./js/toggler.js"></script>
     <!-- Script end -->
   </body>

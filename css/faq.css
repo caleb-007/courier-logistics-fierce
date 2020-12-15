@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  background: #ffffff !important;
+}
+
+/* Page header */
+.page-header h1 {
+  font-size: 40px !important;
+  line-height: 40px !important;
+  color: #ff5c28;
+}
+
+/* Overriding bootstrap styles */
+#top-header {
+  font-weight: 700;
+  margin-top: 3rem;
+}
+
+.faq {
+  margin-top: 7rem;
+}
+
+.form-inline {
+  position: relative;
+  display: inline-block;
+}
+
+.page-header input {
+  margin-top: 20px;
+  height: 50px;
+  border-radius: 15px;
+  width: 455px !important;
+  font-size: 20px !important;
+  line-height: 30px !important;
+  color: rgba(0, 0, 0, 0.3);
+  background: rgba(255, 239, 233, 0.5);
+}
+
+.page-header .fa-search {
+  position: absolute;
+  right: 4.6%;
+  bottom: 15px;
+  font-size: 26px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Questions */
+.small-header {
+  height: 54px;
+  color: #000000;
+  font-size: 40px !important;
+  line-height: 48px !important;
+  font-weight: 900 !important;
+}
+
+/* Overriding bootstrap styles */
+#delivery {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 37px;
+  margin-top: 62px;
+}
+
+#track {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 37px;
+  margin-top: 67px;
+}
+
+.container .questions-track {
+  position: relative;
+  width: 800px;
+  font-size: 20px !important;
+  line-height: 41px !important;
+}
+
+.question1 img {
+  position: absolute;
+  top: 32.96%;
+  right: 2.61%;
+  height: 20px;
+}
+
+.question1 {
+  position: relative;
+  background: rgba(255, 239, 233, 0.5);
+  border-radius: 15px;
+  cursor: pointer;
+}
+/* Style to display the answer */
+.open .answers-section {
+  display: block;
+}
+
+/* Hides the answers on page load */
+.answers-section {
+  display: none;
+}
+
+#last-question {
+  margin-bottom: 5rem;
+}
+
+/* Style that changes the dropdown icon */
+.open > img {
+  transform: rotate(90deg);
+  top: 19% !important;
+}
+
+/* Media Queries */
+/* Small devices e.g. smartphones*/
+@media all and (max-width: 479px) {
+  .container {
+    margin-top: 130px;
+  }
+  /* Page header */
+  .page-header h1 {
+    font-size: 18px !important;
+    line-height: 22px !important;
+  }
+
+  /* Overriding bootstrap styles */
+  #top-header {
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+
+  .page-header input {
+    height: 35px;
+    width: 282px !important;
+    font-size: 12px !important;
+    line-height: 14px !important;
+  }
+
+  .page-header .fa-search {
+    position: absolute;
+    left: 77.6%;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  /* Questions */
+  .small-header {
+    height: 14px;
+    font-size: 18px !important;
+    line-height: 22px !important;
+  }
+
+  /* Overriding bootstrap styles */
+  #delivery {
+    position: relative;
+    margin-top: 32px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  #track {
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .container .questions-track {
+    position: relative;
+    width: 330px !important;
+    font-size: 10px !important;
+    line-height: 12px !important;
+    top: 15px;
+  }
+
+  .question1 img {
+    position: absolute;
+    top: 32.96%;
+    right: 2.61%;
+    height: 18px !important;
+  }
+
+  #last-question {
+    margin-bottom: 4rem;
+  }
+}
+
+/* medium-sized devices e.g tablets*/
+@media all and (min-width: 480px) and (max-width: 767px) {
+  /* Page header */
+  .page-header h1 {
+    font-size: 26px !important;
+    line-height: 26px !important;
+  }
+
+  /* Overriding bootstrap styles */
+  #top-header {
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+
+  .form-inline {
+    position: relative;
+  }
+
+  .page-header input {
+    height: 38px;
+    width: 405px !important;
+    font-size: 16px !important;
+    line-height: 18px !important;
+  }
+
+  .page-header .fa-search {
+    position: absolute;
+    left: 82.6%;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  /* Questions */
+  .small-header {
+    height: 34px;
+    font-size: 18px !important;
+    line-height: 22px !important;
+  }
+
+  /* Overriding bootstrap styles */
+  #delivery {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 22px;
+    margin-top: 30px;
+  }
+
+  #track {
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 21px;
+    line-height: 22px;
+  }
+
+  .container .questions-track {
+    position: relative;
+    width: 470px !important;
+    font-size: 14px !important;
+    line-height: 16px !important;
+  }
+
+  .question1 img {
+    position: absolute;
+    top: 32.96%;
+    right: 2.61%;
+    height: 20px !important;
+  }
+
+  #last-question {
+    margin-bottom: 4rem;
+  }
+}
+/* large devices e.g laptops*/
+@media all and (min-width: 768px) and (max-width: 959px) {
+  /* Page header */
+  .page-header h1 {
+    font-size: 32px !important;
+    line-height: 35px !important;
+  }
+
+  /* Overriding bootstrap styles */
+  #top-header {
+    font-weight: 900;
+    margin-top: 1.3rem;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .form-inline {
+    position: relative;
+  }
+
+  .page-header input {
+    height: 48px;
+    width: 345px !important;
+    font-size: 20px !important;
+    line-height: 24px !important;
+  }
+
+  .page-header .fa-search {
+    position: absolute;
+    right: 4%;
+    font-size: 22px;
+  }
+
+  /* Questions */
+  .small-header {
+    height: 34px;
+    font-size: 22px !important;
+    line-height: 26px !important;
+  }
+
+  /* Overriding bootstrap styles */
+  #delivery {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 28px;
+    margin-top: 50px;
+  }
+
+  #track {
+    font-weight: bold;
+    margin-top: 1.2rem;
+    font-size: 28px;
+    line-height: 28px;
+    margin-top: 50px;
+  }
+
+  .container .questions-track {
+    margin-top: 20px;
+    position: relative;
+    width: 720px !important;
+    font-size: 18px !important;
+    line-height: 22px !important;
+  }
+
+  .question1 img {
+    position: absolute;
+    top: 32.96%;
+    right: 2.61%;
+    height: 20px !important;
+  }
+
+  #last-question {
+    margin-bottom: 4rem;
+  }
+}
+
+/* Extra large devices */
+@media all and (min-width: 960px) and (max-width: 1199px) {
+  /* Page header */
+  .page-header h1 {
+    font-size: 40px !important;
+    line-height: 42px !important;
+  }
+
+  /* Overriding bootstrap styles */
+  #top-header {
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .form-inline {
+    position: relative;
+  }
+
+  /* .page-header input {
+    height: 55px;
+    width: 630px !important;
+    font-size: 24px !important;
+    line-height: 26px !important;
+} */
+
+  .page-header .fa-search {
+    position: absolute;
+    right: 4%;
+    font-size: 24px;
+  }
+
+  /* Questions */
+  .small-header {
+    height: 34px;
+  }
+
+  /* Overriding bootstrap styles */
+  #delivery {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 28px;
+    margin-top: 3rem;
+    margin-top: 70px;
+  }
+
+  #track {
+    font-weight: bold;
+    margin-top: 1.3rem;
+    font-size: 30px;
+    line-height: 28px;
+    margin-top: 70px;
+  }
+
+  .container .questions-track {
+    position: relative;
+    width: 650px !important;
+    font-size: 20px !important;
+    line-height: 26px !important;
+    right: 25px;
+    margin-top: 20px;
+  }
+
+  .question1 img {
+    position: absolute;
+    top: 30.96%;
+    right: 2.61%;
+    height: 20px !important;
+  }
+}
